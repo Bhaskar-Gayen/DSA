@@ -1,6 +1,6 @@
 # DSA
 Repository for Data Structure and Algorithm and Problem Solving.
-Search 
-Sort
+Searching Algorithm, 
+Sorting Algotithm,
 Data Structure
 
