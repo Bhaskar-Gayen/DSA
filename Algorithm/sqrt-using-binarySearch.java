@@ -1,3 +1,5 @@
+package Algorithm;
+
 class Solution {
     public int mySqrt(int x) {
         if(x==0||x==1) return x;
@@ -23,7 +25,7 @@ class Solution {
         return (int)ans;
     }
     
-    //Calculate decimal part of sqrt of a number
+    //Calculate decimal part of square root of a number
     static double morePrecise(int integer, int x, int decimalpoint){
         double factor = 1, ans=0;
         for(int i=0;i<decimalpoint;i++){
@@ -33,7 +35,7 @@ class Solution {
         return ans;
     }
     
-    //O(root(n)) time coplexity 
+    //O(root(n)) time complexity 
     static int fun(int x){
         long y=0;
             while(y*y<=x){
