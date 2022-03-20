@@ -40,7 +40,7 @@ public class MainClass {
     }
 	
 	/*Remove occurrence of substring from a String */
-	static String removeOccurrences(String s, String part) {
+	public  String removeOccurrences(String s, String part) {
 		StringBuilder ans = new StringBuilder();
 		Stack<Character> st = new Stack<>();
 		int n = part.length();
