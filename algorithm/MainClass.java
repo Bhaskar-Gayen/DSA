@@ -1,11 +1,12 @@
-package Algorithm;
+package algorithm;
 
-class Solution {
+class MainClass {
+	
+	/* Find Square root of a Number using Binary Search Time complexity O(Log n) */
     public int mySqrt(int x) {
         if(x==0||x==1) return x;
         long s=0, e=x>>1;
         long ans=0;
-        //O(logn) solution
         while(s<=e){
             long mid=(s+e)>>1;
             long sq=mid*mid;
@@ -35,7 +36,7 @@ class Solution {
         return ans;
     }
     
-    //O(root(n)) time complexity 
+    /* Find Square root of a Number Time Complexity O(root(n)) */ 
     static int fun(int x){
         long y=0;
             while(y*y<=x){
