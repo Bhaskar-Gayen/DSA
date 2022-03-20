@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainClass {
-	/* Merge two sorted array */
+	/* Merge two sorted array O(m+n) */
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
         //edge cases 
         if(n==0) return;
