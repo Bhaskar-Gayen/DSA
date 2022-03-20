@@ -10,7 +10,7 @@ public class MainClass {
             return false;
         if (s2.indexOf(s1) >= 0)
             return true;
-        //create frequency table
+        // create frequency table
         int[] count1 = new int[26];
         int[] count2 = new int[26];
         int l1=s1.length(), l2=s2.length(), i=0;
