@@ -27,6 +27,7 @@ public class MainClass {
         for(int i=index;i<str.length();i++){
             swap(str,i,index);
             solver(str,ans,index+1);
+            //backtrack
             swap(str,i,index);
         }
         
