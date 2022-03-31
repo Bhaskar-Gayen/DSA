@@ -19,6 +19,17 @@ public class ReverseList {
 	        return prev;
 		}
 		
+		//Recursive way to reverse a LinkList.
+		public ListNode reverseListRecursion(ListNode head) {
+	        //handle base case
+	        if(head==null||head.next==null)
+	            return head;
+	        ListNode newhead = reverseListRecursion(head.next);
+	        head.next.next=head;
+	        head.next=null;
+	        return newhead;
+	    }
+		
 		
 
 }
