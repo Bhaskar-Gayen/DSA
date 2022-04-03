@@ -1,5 +1,8 @@
 package linkList;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**LeetCode: 141. Linked List Cycle
  * Given a linked list, determine if it has a cycle in it.
  * Input: head = [3,2,0,-4], pos = 1
@@ -25,6 +28,21 @@ public class CycleinLinkList {
     }
     
     /*Method 2(Using extra space)*/
+    public boolean hasCycle1(ListNode head) {
+        if(head==null)
+            return false;
+        if(head.next==null)
+            return false;
+        Set<ListNode> hs = new HashSet<>();
+        ListNode temp=head;
+        while(temp!=null){
+            if(hs.contains(temp))
+                return true;
+            hs.add(temp);
+            temp=temp.next;
+        }
+        return false;
+    }
     
 
 }
