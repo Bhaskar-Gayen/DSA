@@ -44,5 +44,19 @@ public class CycleinLinkList {
         return false;
     }
     
+    /* return starting node of a cycle in a link list */ 
+    public ListNode detectCycle(ListNode head) {
+        if(head==null||head.next==null)
+           return null;
+       Set<ListNode> hs = new HashSet<>();
+       ListNode temp=head;
+       while(temp!=null){
+           if(hs.contains(temp))
+               return temp;
+           hs.add(temp);
+           temp=temp.next;
+       }
+       return null;
+   }
 
 }
