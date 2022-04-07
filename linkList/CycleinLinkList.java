@@ -101,8 +101,6 @@ public class CycleinLinkList {
 	        temp.next=null;
 	      }     
 	      return head;
-	          
-	      
 	  }
    
 
